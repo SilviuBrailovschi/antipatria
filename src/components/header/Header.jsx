@@ -1,26 +1,46 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
 export const Header = () => (
-    <header>
-   <div className="topNav">
-   <Link href="/">
-    <Image src={'/images/free-logo.png'} alt="logo"  width={60} height={50} />
-    </Link>
-    
-   <nav>
-    <ul>
-      <li>
-      <Link href="/">Home</Link>
-      </li>
-      <li>
-      <Link href="/events">Events</Link>
-      </li>
-      <li>
-      <Link href="/about-us">About Us</Link>
-      </li>
-    </ul>
+  <header>
+    <div className="logo-container">
+      <Link href="/">
+        <Image
+          className="logo-img"
+          src={"/antipatriaFav.png"}
+          alt="logo"
+          width={60}
+          height={50}
+        />
+      </Link>
+      <Link href="/">
+        {" "}
+        <p>Antipatrea's Perfection</p>
+      </Link>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <Link className="nav-link" href="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" href="/products">
+            Product
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" href="/aboutUs">
+            About Us
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-link" href="/contactUs">
+            Contact Us
+          </Link>
+        </li>
+      </ul>
     </nav>
-   </div>
   </header>
-)
+);
