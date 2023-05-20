@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function AboutUs() {
-  return <div>AboutUs</div>;
+  return <section>About Us</section>;
 }
