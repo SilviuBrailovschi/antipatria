@@ -1,5 +1,6 @@
 import React from "react";
 
-export default function Home() {
-  return <div>Home</div>;
-}
+const Home = () => {
+  return <section>Products</section>;
+};
+export default Home;
