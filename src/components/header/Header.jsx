@@ -27,6 +27,7 @@ export const Header = () => {
           <p>Antipatrea's Perfection</p>
         </Link>
       </div>
+
       <Image
         className="burger-menu-icon"
         src={"/icons/burger-menu.png"}
@@ -37,6 +38,7 @@ export const Header = () => {
           setIsopen(!isOpen);
         }}
       />
+
       {isOpen && <MobileNav />}
 
       <nav>
@@ -48,7 +50,7 @@ export const Header = () => {
           </li>
           <li>
             <Link className="nav-link" href="/products">
-              Product
+              Products
             </Link>
           </li>
           <li>
