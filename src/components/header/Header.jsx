@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "../mobileNav/mobile-nav";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   let [isOpen, setIsopen] = useState(false);
-  console.log(isOpen);
   return (
     <header
       onClick={() => {
@@ -24,16 +25,13 @@ export const Header = () => {
         </Link>
         <Link href="/">
           {" "}
-          <p>Antipatrea's Perfection</p>
+          <div className="pageTitle">Antipatrea's Perfection</div>
         </Link>
       </div>
-
-      <Image
+      <FontAwesomeIcon
         className="burger-menu-icon"
-        src={"/icons/burger-menu.png"}
-        alt="burgermenu"
-        width={50}
-        height={50}
+        icon={faBars}
+        style={{ fontSize: 50, color: "white" }}
         onClick={() => {
           setIsopen(!isOpen);
         }}
@@ -44,7 +42,7 @@ export const Header = () => {
       <nav>
         <ul>
           <li>
-            <Link className="nav-link" href="/">
+            <Link className="nav-link" href="/home">
               Home
             </Link>
           </li>
