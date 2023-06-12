@@ -1,6 +1,7 @@
 import Head from "next/head";
+import Home from "./home";
 
-export default function Home() {
+export default function MyApp() {
   return (
     <>
       <Head>
@@ -12,6 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/antipatriaFav.png" />
       </Head>
+      <Home />
     </>
   );
 }
