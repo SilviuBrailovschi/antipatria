@@ -19,12 +19,16 @@ $breakpoint-extra-large: 1300px
 
 *
     margin: 0
-    padding: 0
+    padding-top: 0
     box-sizing: border-box
     font-family: 'Poppins', sans-serif
 
-body
-    position: relative
+html, body
+    overflow: hidden
+    min-height: 100%
+
+main
+    padding-top: 15%
 
 header
     justify-content: space-between
@@ -46,7 +50,7 @@ header
     .logo-img
         mix-blend-mode: normal
         object-fit: contain
-        width: 100px
+        width: 50px
         height: auto
         transition: hover 0.3s
 
@@ -83,10 +87,7 @@ nav
     display: none
 
 section
-    color: red
     text-align: center
-    line-height: 100vh
-    font-size: 50px
 
 footer
     position: absolute
@@ -99,6 +100,7 @@ footer
     display: flex
     align-items: center
     justify-content: center
+    z-index: 1
 
 @media screen and (max-width: 768px)
     nav
