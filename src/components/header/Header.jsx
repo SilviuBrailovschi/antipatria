@@ -25,7 +25,7 @@ export const Header = () => {
         </Link>
         <Link href="/">
           {" "}
-          <div className="pageTitle">Antipatrea's Perfection</div>
+          <div className="pageTitle">Antipatria's Perfection</div>
         </Link>
       </div>
       <FontAwesomeIcon
